@@ -11,7 +11,7 @@ import InterestPopup from "../InterestPopup/InterestPopup";
 
 // FAMILY SITE 목록 예시
 const partnerSites = [
-  { name: "포항 학산 한신더휴", url: "https://www.beyinegzersizi.com" },
+  { name: "포항 학산 한신더휴", url: "https://www.ifors2020.kr/" },
 ];
 
 const Footer = () => {
