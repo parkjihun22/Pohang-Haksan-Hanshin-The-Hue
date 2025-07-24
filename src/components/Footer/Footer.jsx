@@ -48,7 +48,7 @@ const Footer = () => {
         <div className={styles.mobileWrapper}>
           {/* 상단 로고 */}
           <div className={styles.mobileLogo}>
-            <h2>포항 학산 한신더휴 </h2>
+            <h2>포항 학산 한신더휴</h2>
           </div>
 
           {/* 안내문구 */}
@@ -72,7 +72,7 @@ const Footer = () => {
           {/* 시행사/시공사 */}
           <div className={styles.mobileCompany}>
             <div>
-              <strong>시&nbsp;공&nbsp;사</strong> (주)대우건설
+              <strong>시&nbsp;공&nbsp;사</strong> (주)한신공영
             </div>
           </div>
 
@@ -104,7 +104,7 @@ const Footer = () => {
           {/* COPYRIGHT */}
           <div className={styles.mobileCopyright}>
             <p>
-              COPYRIGHTⓒ 2024 포항 학산 한신더휴  INC. ALL RIGHTS RESERVED.
+              COPYRIGHTⓒ 2025 포항 학산 한신더휴  INC. ALL RIGHTS RESERVED.
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ const Footer = () => {
               </div>
               <div className={styles.companyInfo}>
                 <div>
-                  <strong>시&nbsp;공&nbsp;사</strong> (주)대우건설 
+                  <strong>시&nbsp;공&nbsp;사</strong> (주)한신공영 
                 </div>
               </div>
               <div className={styles.buttonRow}>
@@ -156,7 +156,7 @@ const Footer = () => {
           </div>
           <div className={styles.desktopCopyright}>
             <p>
-              COPYRIGHTⓒ 2024 포항 학산 한신더휴  INC. ALL RIGHTS RESERVED.
+              COPYRIGHTⓒ 2025포항 학산 한신더휴  INC. ALL RIGHTS RESERVED.
             </p>
           </div>
         </>

@@ -17,9 +17,10 @@
 .subPinkImg {
     position: absolute;
     left: 50vw; /* 화면 오른쪽 끝으로 배치 */
+    top: 0.1vw;
     width: 5.5vw; /* 크기 조정 (필요에 따라 변경) */
-    top: 0.3vw;
     z-index: 1; /* 텍스트와 겹치지 않도록 설정 */
+    animation: subPinkImgFadeIn 1.5s ease-out forwards 1.5s; /* 서서히 나타나게 */
 }
 
 
@@ -89,7 +90,7 @@
     font-weight: 800;
     font-size: 2vw; /* 텍스트2 가장 큰 크기 */
     margin: 1vw 0;
-    color: #FFFFFF; /* 파랑 색상 */
+    color: #014769; /* 파랑 색상 */
 }
 
 /* 텍스트 애니메이션 */
@@ -131,7 +132,7 @@
     .mainImageTextBox1 {
     
         position: absolute;
-        top: 15%; /* 모바일에서 더 상단에 위치 */
+        top: 25%; /* 모바일에서 더 상단에 위치 */
         left: 50%;
         transform: translateX(-50%); /* 중앙 정렬 */
         color: #FFFFFF;
@@ -142,9 +143,10 @@
     }
 
     .mainImageTextSub1 {
-        color: #ffffff; /* 회색 */
+        color: #014769; /* 회색 */
         font-size: 3vw; /* 모바일에서 글자 크기 줄임 */
-        line-height: 1.6;
+        line-height: 1.8;
+        font-weight: 800;
         margin-bottom: 5vw; /* 모바일에서 여백 조금 줄임 */
         animation: slideUp 1s ease-out forwards; /* 텍스트 슬라이드 애니메이션 */
     }
@@ -152,10 +154,10 @@
     .mainImageText1 {
         font-family: 'Pretendard-Regular';
         font-size: 4vw; /* 모바일에서 더 작은 글자 크기 */
-        font-weight: bold;
-        line-height: 0.1; /* 텍스트 간격 조정 */
-        margin: 0.2vw 0;
-        color: #ffffff; /* 파랑 색상 */
+        font-weight: 800;
+        line-height: 1.2; /* 텍스트 간격 조정 */
+        margin: 0.5vw 0;
+        color: #014769; /* 파랑 색상 */
         animation: fadeInUp 1.5s ease-out forwards 0.5s; /* 점차적으로 나타나며 올라오는 효과 */
     }
 
@@ -165,14 +167,15 @@
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
-        color: #095052; /* 파랑 색상 */
+        font-weight: 800;
+        color: #014769; /* 파랑 색상 */
     }
 
     .greyText1 {
         font-size: 3vw; /* 텍스트2 가장 큰 크기 */
         font-weight: 600;
         font-family: 'Pretendard-Regular';
-        color: #fbf70a; /* 회색 텍스트 */
+        color: #ffffff; /* 회색 텍스트 */
     }
 
     
@@ -232,6 +235,7 @@
         margin-left: 7vw;
         padding-top: 9vw;
 
+        font-family: 'HakgyoansimBareonbatangB';
         font-weight: 700;
         font-size: 3.5vw;
 
@@ -255,8 +259,9 @@
 
         .text4 {
             margin-top: 5vw;
+            margin-left: 2vw;
             font-size: 1.2vw;
-            color: #000000;
+            color: #241400;
 
             a {
                 text-decoration: none;
@@ -432,7 +437,7 @@
     }
 
     .box:hover {
-        background-color: #095052;
+        background-color: #014769;
         color: #fff7ea;
     }
 }
@@ -535,7 +540,7 @@
         
         position: relative; /* 상대적 위치 지정 */
         width: 100%;
-        height: 80%;
+        height: 50%;
         overflow: hidden; /* 이미지를 잘라내지 않도록 */
 
         .mainImage {
@@ -701,7 +706,7 @@
         .text2 {
 
             margin-left: 5vw;
-            margin-top: 5vw;
+            margin-top: 3vw;
             font-size: 3vw;
             color: #000000fc;
         }
@@ -941,17 +946,17 @@
         margin: 4vw 0 0 5vw;
 
         .title {
-            color: #095052;
-            font-family: 'HakgyoansimBareonbatangB';
+            color: #014769;
+
             font-size: 4vw;
             font-weight: 400;
             line-height: 6vw;
 
             span:first-of-type {
-                font-family: 'HakgyoansimBareonbatangB';
+
                 color: #b88c52;
                 font-weight: 800;
-                font-size: 5vw;
+                font-size: 4vw;
             }
         }
 
@@ -965,13 +970,12 @@
             width: 100%;
 
             .textLine {
-                border: 3px solid #095052;
+                border: 2px solid #014769;
                 width: 0;
                 height: 7vw;
             }
 
             .subText {
-                font-family: 'HakgyoansimBareonbatangB';
                 color: #0f0f1d;
                 margin: 0 0 0 0;
                 font-size: 3vw;
@@ -1003,17 +1007,19 @@
         justify-content: flex-start;
         align-items: flex-start;
 
-        margin: 18vw 0 0 6vw;
+        margin: 16vw 0 0 6vw;
         width: 80%;
 
         .title {
-            color: #095052;
+            color: #014769;
+            font-family: 'NanumHumanTTFBold';  
             font-size: 2vw;
             font-weight: 600;
             line-height: 3.5vw;
 
             span:first-of-type {
                 color: #b88c52;
+                font-weight: 800;
                 font-size: 2.5vw;
             }
         }
@@ -1029,13 +1035,13 @@
             width: 100%;
 
             .textLine {
-                border: 2px solid #095052;
+                border: 4px solid #014769;
                 width: 0;
                 height: 3.5vw;
             }
 
             .subText {
-                color: #095052;
+                color: #014769;
                 font-family: 'NanumHumanTTFBold';
                 font-size: 1.3vw;
                 line-height: 2vw;
@@ -1045,7 +1051,7 @@
     }
 
     img {
-        margin: 12vw 5VW 2vw 0;
+        margin: 8vw 5VW 2vw 0;
         width: 40vw;
 
     }
@@ -1073,7 +1079,7 @@
         height: auto;
 
         .title {
-            color: #095052;
+            color: #014769;
             font-family: 'NanumHumanTTFBold';
             font-size: 2vw;
             font-weight: 600;
@@ -1098,7 +1104,7 @@
             width: 100%;
 
             .textLine {
-                border: 4px solid #095052;
+                border: 4px solid #014769;
                 width: 0;
                 height: 3.5vw;
             }
@@ -1254,14 +1260,14 @@
 .text3 {
   font-family: 'NanumHumanTTFBold';
   font-size: 1.5rem;
-  color: #095052;
+  color: #014769;
   font-weight: bold;
 }
 
 /* text4: 전화번호 */
 .text4 {
   font-size: 1.5rem;
-  color: #095052;       /* 예: 붉은색 */
+  color: #014769;       /* 예: 붉은색 */
   font-weight: bold;
 }
 
@@ -1302,7 +1308,7 @@
 .registrationForm button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #095052;
+  background-color: #014769;
   color: #fff;
   border: none;
   border-radius: 4px;

@@ -16,9 +16,9 @@ import Ready from "../../components/Ready/Ready";
 
 const Interior3 = () => {
 	const menuContents = [
-		{ title: "84A", url: "/Interior/59A" },
-		{ title: "119A", url: "/Interior/84A" },
-		{ title: "119B", url: "/Interior/84B" },
+		{ title: "75㎡", url: "/Interior/59A" },
+		{ title: "80㎡", url: "/Interior/84A" },
+		{ title: "84㎡", url: "/Interior/84B" },
 	];	
 
 	const [isScroll, setIsScroll] = useState(false);
@@ -69,7 +69,7 @@ const Interior3 = () => {
 			{/*<img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="포항 학산 한신더휴 119타입 인테리어안내 image"
+				alt="포항 학산 한신더휴 84타입 인테리어안내 image"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/>*/}
 

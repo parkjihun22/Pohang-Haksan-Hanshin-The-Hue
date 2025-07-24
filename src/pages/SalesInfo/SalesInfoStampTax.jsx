@@ -12,9 +12,9 @@ import Ready from "../../components/Ready/Ready";
 
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "청약제도변경", url: "/SalesInfo/SubscriptionGuide" },
-    // { title: "인터넷 청약", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
+    { title: "인지세납부안내", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "인터넷 청약", url: "/SalesInfo/guide" },
     // { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
 
@@ -49,7 +49,90 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="robots" content="index, follow" />
 
+        {/* SEO 최적화를 위한 메타 태그 */}
+        <title>포항 학산 한신더휴 - 인지세안내 </title>
+        <meta
+          name="description"
+          content="포항 학산 한신더휴 의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다.
+
+"
+        />
+        <meta
+          name="keywords"
+          content="포항 학산 한신더휴, 포항 학산 한신더휴, 포항 학산 한신더휴모델하우스"
+        />
+        <link
+          rel="canonical"
+          href="https://www.ifors2020.kr/SalesInfo/stampTax"
+        />
+
+        {/* Open Graph - 소셜 미디어 공유 최적화 */}
+        <meta
+          property="og:title"
+          content="포항 학산 한신더휴 - 인지세안내 "
+        />
+        <meta
+          property="og:description"
+          content="포항 학산 한신더휴 의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다.
+
+"
+        />
+        <meta
+          property="og:image"
+          content="https://www.ifors2020.kr/Main1.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.ifors2020.kr/SalesInfo/stampTax"
+        />
+        <meta property="og:site_name" content="포항 학산 한신더휴" />
+
+        {/* Twitter 카드 설정 */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="포항 학산 한신더휴 - 인지세안내 "
+        />
+        <meta
+          name="twitter:description"
+          content="포항 학산 한신더휴의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다.
+
+"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.ifors2020.kr/Main1.png"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.ifors2020.kr/SalesInfo/stampTax"
+        />
+
+        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+        <script type="application/ld+json">
+          {`
+                                        {
+                                            "@context": "https://schema.org",
+                                            "@type": "WebPage",
+                                            "name": "포항 학산 한신더휴 - 인지세안내 ",
+                                            "description": "포항 학산 한신더휴의 인지세 안내 페이지는 분양과 관련된 세금 정보를 제공합니다. 인지세는 계약서 작성 시 부과되는 세금으로, 이를 사전에 파악하고 준비하는 것이 중요합니다. 이 페이지에서는 인지세의 계산 방법, 세액, 납부 절차 등을 쉽게 설명하여 고객들이 정확하게 준비할 수 있도록 돕습니다.
+
+",
+                                            "url": "https://www.ifors2020.kr/SalesInfo/stampTax"
+                                        }
+                                        `}
+        </script>
+      </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />

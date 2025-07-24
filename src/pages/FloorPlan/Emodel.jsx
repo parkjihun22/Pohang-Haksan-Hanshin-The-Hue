@@ -11,20 +11,16 @@ import { Helmet } from "react-helmet-async";
 
 const Emodel = () => {
   const menuContents = [
-    { title: "59A", key: "59A" },
-    { title: "59B", key: "59B" },
-    { title: "84A", key: "84A" },
-    { title: "84B", key: "84B" },
+    { title: "E-모델하우스", key: "E-모델하우스" },
+
   ];
 
   const vrUrls = {
-    "59A": "https://www.prugio.com/hb/2025/onecluster/vr/59a.html",
-    "59B": "https://www.prugio.com/hb/2025/onecluster/vr/59b.html",
-    "84A": "https://www.prugio.com/hb/2025/onecluster/vr/84a.html",
-    "84B": "https://www.prugio.com/hb/2025/onecluster/vr/84b.html",
+    "E-모델하우스": "https://phhs-thehue.com/vr_221216/index.html",
+
   };
 
-  const [selectedType, setSelectedType] = useState("59A");
+  const [selectedType, setSelectedType] = useState("E-모델하우스");
   const { pathname } = useLocation();
   const [isScroll, setIsScroll] = useState(false);
 
@@ -42,7 +38,25 @@ const Emodel = () => {
 
   return (
     <div className={styles.container}>
-      
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="robots" content="index, follow" />
+        <title>포항 학산 한신더휴 - E-모델하우스</title>
+        <meta name="description" content="포항 학산 한신더휴의 E-모델하우스를 온라인으로 편리하게 둘러보세요." />
+        <meta name="keywords" content="포항 학산 한신더휴, 펜타시티한신더휴, E-모델하우스, 온라인모델하우스" />
+        <link rel="canonical" href="https://www.ifors2020.kr/FloorPlan/Emodel" />
+        <meta property="og:title" content="포항 학산 한신더휴 - E-모델하우스" />
+        <meta property="og:description" content="포항 학산 한신더휴의 E-모델하우스를 온라인으로 편리하게 둘러보세요." />
+        <meta property="og:image" content="https://www.ifors2020.kr/Main1.png" />
+        <meta property="og:url" content="https://www.ifors2020.kr/FloorPlan/Emodel" />
+        <meta property="og:site_name" content="포항 학산 한신더휴" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="포항 학산 한신더휴 - E-모델하우스" />
+        <meta name="twitter:description" content="포항 학산 한신더휴의 E-모델하우스를 온라인으로 편리하게 둘러보세요." />
+        <meta name="twitter:image" content="https://www.ifors2020.kr/Main1.png" />
+      </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />

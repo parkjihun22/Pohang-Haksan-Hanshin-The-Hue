@@ -29,26 +29,26 @@ const items = [
         <li>
           <strong>대지위치</strong>
           <span>
-            인천광역시 서구 포항동 86-6번지 <br />[포항국제도시 업무용지 B1]
-
+            경상북도 포항시 북구 학산동 53-15 <br />
           </span>
         </li>
         <li>
           <strong>건축규모</strong>
           <span>
-            지하 5층 ~ 지상 49층 총 4개동
+            지하 4층~지상35층 총 12개동 및<br />
+            부대복리시설
           </span>
         </li>
         <li>
           <strong>주택형</strong>
           <span>
-            전용 84OA, 84OB / 전용 119OA, 119OB, 119OC<br />
+            75㎡ / 80㎡/ 84㎡ / 107㎡ / 114㎡<br />
           </span>
         </li>
         <li>
           <strong>세대수</strong>
           <span>
-           총 1,056세대
+            [A2블록] 1,1455세대<br />
           </span>
         </li>
       </ul>
@@ -64,11 +64,7 @@ const items = [
           className={styles.mapImage}
           alt="입지환경 지도 1"
         />
-        {/* <img
-          src={mobileMap2}
-          className={styles.mapImage}
-          alt="입지환경 지도 2"
-        /> */}
+
       </div>
     ),
   },
@@ -81,8 +77,8 @@ const items = [
         <div className={styles.premiumIntro}>
           <h3 className={styles.premiumTitle}>GREAT PREMIUM</h3>
           <p className={styles.premiumSubtitle}>
-            포항의 랜드마크에서 사는<br />
-            최고의 1군 브랜드 아파트
+            포항 학산의 중심으로 사는<br />
+            최고의 브랜드 아파트
           </p>
         </div>
         {/* 슬라이더 */}
@@ -96,37 +92,37 @@ function PremiumSlider() {
   const slides = [
     {
       img: slide1,
-      title: "국제업무단지의 눈부치 미래가치",
+      title: "미래가치를 높여주는 포항 학산 한신더휴",
       desc:
-        "대규모 복합단지로 조성될, <br />대지면적 약 4만3천평 규모 <br /> 주거-상업-비지니시를 잇는 자족도시",
+        "2차전지 중심 도시개발<br />블루밸리 국가산단, 영일만산단 등 초대형 미래비전",
     },
     {
       img: slide2,
-      title: "의세권을 누리릴 수 있는 프리미엄",
+      title: "한신더휴만의 특화 혁신설계 프리미엄",
       desc:
-        "서울 아산 포항병원 (29년계획)<br />800병상 규모의 글로벌 중증 전문병원",
+        "74·80·84타입 중소형 평형대 설계<br />4BAY,펜트리등 차별화던 혁신평면",
     },
     {
       img: slide3,
-      title: "서울-인천-경기를 잇는 특급교통",
+      title: "광역으로 통하는 특급 교통",
       desc:
-        "7호선 국제업무단지역 27년 연장계통 예정 <br />제 3연륙교(25년 개통예정), 제2외곽순환도로 등 ",
+        "덕선 IC로 바로 연결예정 <br />포항역 KTX는 덤, 편리한 교통망에 더해지는 포항 학산",
     },
     {
       img: slide4,
-      title: "학교, 쇼핑,병원, 문화를 더 가깝게 <br /> 한걸음에 SMART 인프라",
-      desc: "단지 인근 초등학교, 영상 문화 단지 , 코스트코(운영중) , 문학공원 등",
+      title: "단지 내 교육특화 학급특권",
+      desc: "학원브랜드 1위 종로M스쿨 수업지원<br /> 학습전용 복합커뮤니티 단지 내 조성 ",
     },
     {
       img: slide5,
-      title: "1,056세대 한신더휴 대단지 프리미엄",
+      title: "1,455세대 학산내 대단지 프리미엄",
       desc:
-        "총 1,056세대 포항 학산 한신더휴로 찾아옵니다",
+        "최중심 인프라 생활특권은 덤으로 <br /> 메머드급 대단지 프리미엄",
     },
     {
       img: slide6,
-      title: "확정된 미래가치 보장",
-      desc: "포항 최초의 와이드 플랫폼 프리미엄",
+      title: "한시적인 계약자 특별혜택 증정",
+      desc: "성공 분양의 대표주자 학산 한신더휴 ,한시적 파격적인 특별혜택",
     },
   ];
 
@@ -196,7 +192,7 @@ export default function MobileOverviewSection() {
     <section className={styles.overviewSection}>
       {/* ─── 헤더 영역 ─── */}
       <header className={styles.overviewHeader}>
-        <div className={styles.preTitle}>PEAKONE PRUGIO BUSINESS</div>
+        <div className={styles.preTitle}>ONE CLUSTER BUSINESS</div>
         <div className={styles.line} />
         <h2 className={styles.mainTitle}>사업안내</h2>
       </header>

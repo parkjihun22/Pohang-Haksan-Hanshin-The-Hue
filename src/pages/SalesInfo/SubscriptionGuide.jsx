@@ -13,9 +13,9 @@ import page1 from "../../assets/SalesInfo/SubscriptionGuide/page1.jpg";
 
 const ComplexGuide1 = () => {
   const menuContents = [
-    { title: "청약제도변경", url: "/SalesInfo/SubscriptionGuide" },
-    // { title: "인터넷 청약", url: "/SalesInfo/guide" },
     { title: "모집공고안내", url: "/SalesInfo/announcement" },
+    { title: "인지세납부안내", url: "/SalesInfo/SubscriptionGuide" },
+    // { title: "인터넷 청약", url: "/SalesInfo/guide" },
     // { title: "인지세납부안내", url: "/SalesInfo/stampTax" },
   ];
 
@@ -50,7 +50,90 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="robots" content="index, follow" />  
 
+        {/* SEO 최적화를 위한 메타 태그 */}
+        <title>포항 학산 한신더휴 - 체크포인트</title>
+        <meta
+          name="description"
+          content="포항 학산 한신더휴분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+
+"
+        />
+        <meta
+          name="keywords"
+          content="포항 학산 한신더휴, 포항 학산 한신더휴, 포항 학산 한신더휴모델하우스"
+        />
+        <link
+          rel="canonical"
+          href="https://www.ifors2020.kr/SalesInfo/SubscriptionGuide"
+        />
+
+        {/* Open Graph - 소셜 미디어 공유 최적화 */}
+        <meta
+          property="og:title"
+          content="포항 학산 한신더휴 - 체크포인트"
+        />
+        <meta
+          property="og:description"
+          content="포항 학산 한신더휴분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+
+"
+        />
+        <meta
+          property="og:image"
+          content="https://www.ifors2020.kr/Main1.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.ifors2020.kr/SalesInfo/SubscriptionGuide"
+        />
+        <meta property="og:site_name" content="포항 학산 한신더휴" />
+
+        {/* Twitter 카드 설정 */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="포항 학산 한신더휴 - 체크포인트"
+        />
+        <meta
+          name="twitter:description"
+          content="포항 학산 한신더휴분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+
+"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.ifors2020.kr/Main1.png"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.ifors2020.kr/SalesInfo/SubscriptionGuide"
+        />
+
+        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+        <script type="application/ld+json">
+          {`
+                                        {
+                                            "@context": "https://schema.org",
+                                            "@type": "WebPage",
+                                            "name": "포항 학산 한신더휴 - 체크포인트",
+                                            "description": "포항 학산 한신더휴분양 전 필수 체크포인트를 확인하세요. 청약 자격, 서류 준비, 일정 등 분양 절차에서 놓치지 말아야 할 중요한 사항들을 정리해두었습니다. 정확한 정보와 절차를 통해 분양을 성공적으로 진행할 수 있도록 돕습니다.
+
+",
+                                            "url": "https://www.ifors2020.kr/SalesInfo/SubscriptionGuide"
+                                        }
+                                        `}
+        </script>
+      </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />

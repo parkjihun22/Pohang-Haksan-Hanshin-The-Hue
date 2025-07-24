@@ -44,7 +44,84 @@ const Brand2 = () => {
 
 	return (
 		<div className={styles.container}>
-   
+<Helmet>
+		{/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+		<meta charSet="utf-8" />
+		<meta
+		  name="viewport"
+		  content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="robots" content="index, follow" />
+
+		{/* SEO 최적화를 위한 메타 태그 */}
+		<title>포항 학산 한신더휴 - 홍보영상</title>
+		<meta
+		  name="description"
+		  content="포항 학산 한신더휴의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 포항의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요.
+"
+		/>
+  		<meta name="keywords"
+        content="학산한신더휴, 학산한신더휴엘리트파크" />			
+		<link
+		  rel="canonical"
+		  href="https://www.ifors2020.kr/Brand/video"
+		/>
+
+		{/* Open Graph - 소셜 미디어 공유 최적화 */}
+		<meta
+		  property="og:title"
+		  content="포항 학산 한신더휴 - 홍보영상"
+		/>
+		<meta
+		  property="og:description"
+		  content="포항 학산 한신더휴의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 포항의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요.
+"
+		/>
+		<meta
+		  property="og:image"
+		  content="https://www.ifors2020.kr/Main1.png"
+		/>
+		<meta
+		  property="og:url"
+		  content="https://www.ifors2020.kr/Brand/video"
+		/>
+		<meta property="og:site_name" content="포항 학산 한신더휴" />
+
+		{/* Twitter 카드 설정 */}
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+		  name="twitter:title"
+		  content="포항 학산 한신더휴 - 홍보영상"
+		/>
+		<meta
+		  name="twitter:description"
+		  content="포항 학산 한신더휴의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 포항의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요.
+"
+		/>
+		<meta
+		  name="twitter:image"
+		  content="https://www.ifors2020.kr/Main1.png"
+		/>
+		<meta
+		  name="twitter:url"
+		  content="https://www.ifors2020.kr/Brand/video"
+		/>
+
+		{/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+		<script type="application/ld+json">
+		  {`
+										{
+											"@context": "https://schema.org",
+											"@type": "WebPage",
+											"name": "포항 학산 한신더휴 - 홍보영상",
+											"description": "포항 학산 한신더휴의 홍보영상을 통해 단지의 매력적인 디자인과 최신 편의시설을 생생하게 만나보세요. 현대적 감각과 고급스러움을 결합한 주거 환경, 포항의 중심에서 경험할 수 있는 새로운 라이프스타일을 영상으로 확인하세요.
+",
+											"url": "https://www.ifors2020.kr/Brand/video"
+										}
+										`}
+		</script>
+	  </Helmet>    
 			
 			<Header isChanged={isScroll} />
 			<FixIcon />
@@ -65,7 +142,7 @@ const Brand2 = () => {
 
 			<div className={styles.videoContainer}>
 				<YouTube
-					videoId="-GJb_Pi-v_Y"
+					videoId="G5-5Z85DwC8"
 					opts={{
 						width: isMobile ? "400" : "1300",
 						height: isMobile ? "300" : "500",

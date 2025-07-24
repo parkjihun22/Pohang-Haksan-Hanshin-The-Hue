@@ -47,12 +47,90 @@ const Brand1 = () => {
 
     return (
         <div className={styles.container}>
+<Helmet>
+        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="robots" content="index, follow" />
+
+        {/* SEO 최적화를 위한 메타 태그 */}
+        <title>포항 학산 한신더휴 - 브랜드 소개</title>
+        <meta
+          name="description"
+          content="포항 학산 한신더휴의 브랜드 철학과 가치를 소개합니다. 한신공영의 대표 브랜드 프로지오는 고급스러움과 실용성을 결합한 주거공간을 제공합니다. 고객의 삶을 중심에 둔 설계와 혁신적인 기술, 지속 가능한 개발 철학을 통해 미래를 선도하는 주거 문화를 만들어갑니다. 힐스테이트의 브랜드 스토리와 비전을 확인해보세요.
+"
+        />
+        <meta name="keywords"
+        content="학산한신더휴, 학산한신더휴엘리트파크" />
+        <link
+          rel="canonical"
+          href="https://www.ifors2020.kr/Brand/intro"
+        />
+
+        {/* Open Graph - 소셜 미디어 공유 최적화 */}
+        <meta
+          property="og:title"
+          content="포항 학산 한신더휴 - 브랜드 소개"
+        />
+        <meta
+          property="og:description"
+          content="포항 학산 한신더휴의 브랜드 철학과 가치를 소개합니다. 한신공영의 대표 브랜드 프로지오는 고급스러움과 실용성을 결합한 주거공간을 제공합니다. 고객의 삶을 중심에 둔 설계와 혁신적인 기술, 지속 가능한 개발 철학을 통해 미래를 선도하는 주거 문화를 만들어갑니다. 힐스테이트의 브랜드 스토리와 비전을 확인해보세요.
+"
+        />
+        <meta
+          property="og:image"
+          content="https://www.ifors2020.kr/Main1.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.ifors2020.kr/Brand/intro"
+        />
+        <meta property="og:site_name" content="포항 학산 한신더휴" />
+
+        {/* Twitter 카드 설정 */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="포항 학산 한신더휴 - 브랜드 소개"
+        />
+        <meta
+          name="twitter:description"
+          content="포항 학산 한신더휴의 브랜드 철학과 가치를 소개합니다. 한신공영의 대표 브랜드 프로지오는 고급스러움과 실용성을 결합한 주거공간을 제공합니다. 고객의 삶을 중심에 둔 설계와 혁신적인 기술, 지속 가능한 개발 철학을 통해 미래를 선도하는 주거 문화를 만들어갑니다. 힐스테이트의 브랜드 스토리와 비전을 확인해보세요.
+"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.ifors2020.kr/Main1.png"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.ifors2020.kr/Brand/intro"
+        />
+
+        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+        <script type="application/ld+json">
+          {`
+                                        {
+                                            "@context": "https://schema.org",
+                                            "@type": "WebPage",
+                                            "name": "포항 학산 한신더휴 - 브랜드 소개",
+                                            "description": "포항 학산 한신더휴의 브랜드 철학과 가치를 소개합니다. 한신공영의 대표 브랜드 프로지오는 고급스러움과 실용성을 결합한 주거공간을 제공합니다. 고객의 삶을 중심에 둔 설계와 혁신적인 기술, 지속 가능한 개발 철학을 통해 미래를 선도하는 주거 문화를 만들어갑니다. 힐스테이트의 브랜드 스토리와 비전을 확인해보세요.
+",
+                                            "url": "https://www.ifors2020.kr/Brand/intro"
+                                        }
+                                        `}
+        </script>
+      </Helmet>
             
 
             <Header isChanged={isScroll} />
             <FixIcon />
 
-            <Bener title="한신더휴" />
+            <Bener title="푸르지오" />
 
             <MenuBar contents={menuContents} />
             {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
@@ -63,7 +141,7 @@ const Brand1 = () => {
 
             <div className={`${styles.textBox} ${isTextVisible ? styles.active : ''}`}>
                 <div>생활의 모든 것을 한걸음에</div>
-                <div>한신더휴, 반도체클러스터의 중심에 서다</div>
+                <div>한신더휴, 포항 학산의 중심에 서다</div>
 </div>
 
             <img className={`${styles.image} ${isImageVisible ? styles.visible : ''}`} src={page1} alt="포항 학산 한신더휴 brand-Image1" />

@@ -40,14 +40,14 @@ const Bener = ({ title }) => {
 export default Bener;
 
 const contents = (text, isLoaded) => {
-    if (text === '한신더휴' || text === '홍보영상' || text === '체크포인트'| text === '당첨자서류안내') {
+    if (text === '푸르지오' || text === '홍보영상' || text === '체크포인트'| text === '당첨자서류안내'| text === '포항 학산 한신더휴') {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
                     지친 하루를 마치고 가장 나에 가까운 본연의 모습으로 돌아와 누리는 프리미엄입니다.
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    반도체 클러스터의 중심 
+                    포항의 중심 
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
                     NO.1 브랜드 포항 학산 한신더휴와 함께합니다.
@@ -58,10 +58,10 @@ const contents = (text, isLoaded) => {
         return (
             <>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    한신더휴가 선택한 새도시!
+                    푸르지오가 선택한 새도시!
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                   포항 최초의 와이드 플랫폼 프리미엄
+                    포항의 중심입지 프리미엄
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
                     가장 높은 브랜드의 첫 시작
@@ -92,7 +92,7 @@ const contents = (text, isLoaded) => {
                     편리한 생활을 위한 최적의 공간설계
                 </div>
                 <div className={`${styles.text} ${isLoaded ? styles.showText : ''}`}>
-                    소수에게만 허락된 포항 학산 한신더휴 포항의 핵심중심에 찾아옵니다
+                    소수에게만 허락된 포항 학산 한신더휴, 처음이자 마지막으로 포항의 핵심중심에 찾아옵니다
                 </div>
             </>
         );

@@ -10,16 +10,18 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import HelmetCOM from "../../components/HelmetCOM/HelmetCOM";
 import { Helmet } from "react-helmet-async";
 
-import page1 from "../../assets/FloorPlan/FloorPlan5/page1.jpg"
+import page1 from "../../assets/FloorPlan/FloorPlan5/count01_2_99a.jpg"
 
 
 const FloorPlan5 = () => {
 	const menuContents = [
-		{ title: "59A", url: "/FloorPlan/59A" },
-		{ title: "59B", url: "/FloorPlan/59B" },
-		{ title: "84A", url: "/FloorPlan/84A" },
-		{ title: "84B", url: "/FloorPlan/84B" },
-		{ title: "84C", url: "/FloorPlan/114A" },
+		{ title: "84A", url: "/FloorPlan/59A" },
+		{ title: "84B", url: "/FloorPlan/59B" },
+		{ title: "84C", url: "/FloorPlan/84A" },
+		{ title: "84D", url: "/FloorPlan/84B" },
+		{ title: "99A", url: "/FloorPlan/114A" },
+		{ title: "99B", url: "/FloorPlan/114B" },
+		{ title: "99C", url: "/FloorPlan/114C" },
 		// { title: "세대안내영상", url: "/FloorPlan/videos" }, // 세대안내영상 링크
 		{ title: "E-모델하우스", url: "/FloorPlan/Emodel" },
 	];
@@ -65,8 +67,8 @@ const FloorPlan5 = () => {
 			<MenuBar contents={menuContents} />
 
 			<div className={styles.textBox}>
-				<div>반도체클러스터의 눈부신 가치 위에</div>
-				<div>한신더휴의 새로운 자부심으로 찾아옵니다.</div>
+				<div>포항 학산의 눈부신 가치 위에</div>
+				<div>푸르지오의 새로운 자부심으로 찾아옵니다.</div>
 			</div>
 
 			{/* 이미지에 애니메이션 효과 추가 */}

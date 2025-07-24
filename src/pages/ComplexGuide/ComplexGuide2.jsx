@@ -9,8 +9,7 @@ import FixIcon from "../../components/FixIcon/FixIcon";
 import { Helmet } from "react-helmet-async";
 
 
-// import page1 from "../../assets/ComplexGuide/ComplexGuide2/page1.webp";
-import Ready from "../../components/Ready/Ready";
+import page1 from "../../assets/ComplexGuide/ComplexGuide2/page1.webp";
 
 const ComplexGuide1 = () => {
   const menuContents = [
@@ -49,7 +48,84 @@ const ComplexGuide1 = () => {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        {/* 기본 문자셋 및 모바일 최적화를 위한 meta 태그 */}
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="robots" content="index, follow" />
 
+        {/* SEO 최적화를 위한 메타 태그 */}
+        <title>포항 학산 한신더휴 - 호수배치도</title>
+        <meta
+          name="description"
+          content="포항 학산 한신더휴의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
+"
+        />
+        <meta name="keywords"
+        content="학산한신더휴, 학산한신더휴엘리트파크" /> 
+        <link
+          rel="canonical"
+          href="https://www.ifors2020.kr/ComplexGuide/detailintro"
+        />
+
+        {/* Open Graph - 소셜 미디어 공유 최적화 */}
+        <meta
+          property="og:title"
+          content="포항 학산 한신더휴 - 호수배치도"
+        />
+        <meta
+          property="og:description"
+          content="포항 학산 한신더휴의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
+"
+        />
+        <meta
+          property="og:image"
+          content="https://www.ifors2020.kr/Main1.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.ifors2020.kr/ComplexGuide/detailintro"
+        />
+        <meta property="og:site_name" content="포항 학산 한신더휴" />
+
+        {/* Twitter 카드 설정 */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="포항 학산 한신더휴 - 호수배치도"
+        />
+        <meta
+          name="twitter:description"
+          content="포항 학산 한신더휴의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
+"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.ifors2020.kr/Main1.png"
+        />
+        <meta
+          name="twitter:url"
+          content="https://www.ifors2020.kr/ComplexGuide/detailintro"
+        />
+
+        {/* 구조화된 데이터 (JSON-LD) - 검색엔진 이해도 향상 */}
+        <script type="application/ld+json">
+          {`
+										{
+											"@context": "https://schema.org",
+											"@type": "WebPage",
+											"name": "포항 학산 한신더휴 - 호수배치도",
+											"description": "포항 학산 한신더휴의 호수 배치도를 통해 각 세대의 위치와 전망을 확인하세요. 주거 만족도를 높이는 체계적인 배치 설계로 더 나은 라이프스타일을 제안합니다.
+",
+											"url": "https://www.ifors2020.kr/ComplexGuide/detailintro"
+										}
+										`}
+        </script>
+      </Helmet>
 
       <Header isChanged={isScroll} />
       <FixIcon />
@@ -70,13 +146,12 @@ const ComplexGuide1 = () => {
       </div>
 
       {/* 이미지에 애니메이션 효과 추가 */}
-      {/* <img
+      <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
 				alt="포항 학산 한신더휴 호수배치도-image1"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
-			/> */}
-      <Ready/>
+			/>
 
   
 

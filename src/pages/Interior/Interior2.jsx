@@ -17,8 +17,9 @@ import page1 from "../../assets/Interior/Interior2/page1.jpg";
 
 const Interior2 = () => {
   const menuContents = [
-    { title: "59㎡", url: "/Interior/59A" },
-    { title: "84㎡", url: "/Interior/84A" },
+    { title: "75㎡", url: "/Interior/59A" },
+    { title: "80㎡", url: "/Interior/84A" },
+    { title: "84㎡", url: "/Interior/84B" },
   ];
 
   const [isScroll, setIsScroll] = useState(false);
@@ -54,7 +55,6 @@ const Interior2 = () => {
   return (
     <div className={styles.container}>
 
-
       <Header isChanged={isScroll} />
       <FixIcon />
 
@@ -63,7 +63,7 @@ const Interior2 = () => {
       <MenuBar contents={menuContents} />
       {/* <h1> 태그를 사용하여 페이지 제목 설정 (SEO 최적화) */}
       <h1 className={styles.screenReaderOnly}>
-        포항 학산 한신더휴 - 84A 인테리어
+        포항 학산 한신더휴 - 80 인테리어
       </h1>
       <p className={styles.screenReaderOnly}>
         84A타입의 84A인테리어 페이지에서는 포항 학산 한신더휴의 고급
@@ -74,7 +74,7 @@ const Interior2 = () => {
       </p>
 
       <div className={styles.textBox}>
-        <div>대우건설 한신더휴, 반도체클러스터터의 눈부신 가치 위에</div>
+        <div>한신더휴, 포항 학산의 눈부신 가치 위에</div>
         <div>새로운 자부심으로 찾아옵니다.</div>
       </div>
 
@@ -82,7 +82,7 @@ const Interior2 = () => {
       <img
 				className={`${styles.image2} ${isImage2Loaded ? styles.showImage2 : ''}`}
 				src={page1}
-				alt="포항 학산 한신더휴 84A 인테리어 안내 이미지"
+				alt="포항 학산 한신더휴 80 인테리어 안내 이미지"
 				onLoad={handleImageLoad}  // 이미지 로드 후 애니메이션 실행
 			/>
 

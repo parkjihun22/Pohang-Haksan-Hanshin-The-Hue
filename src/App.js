@@ -1,4 +1,6 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// src/App.js
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Main from './pages/Main/Main';
 
@@ -22,60 +24,86 @@ import FloorPlan3 from './pages/FloorPlan/FloorPlan3';
 import FloorPlan4 from './pages/FloorPlan/FloorPlan4';
 import FloorPlan5 from './pages/FloorPlan/FloorPlan5';
 import FloorPlan6 from './pages/FloorPlan/FloorPlan6';
+import FloorPlan7 from './pages/FloorPlan/FloorPlan7';
 import FloorPlanVideos from './pages/FloorPlan/FloorPlanVideos';
-import Emodel from "./pages/FloorPlan/Emodel";
+import Emodel from './pages/FloorPlan/Emodel';
 
 import Interior1 from './pages/Interior/Interior1';
 import Interior2 from './pages/Interior/Interior2';
 import Interior3 from './pages/Interior/Interior3';
 
-import SalesInfoGuide from './pages/SalesInfo/SalesInfoGuide'; // 추가된 페이지
-import SalesInfoAnnouncement from './pages/SalesInfo/SalesInfoAnnouncement'; // 추가된 페이지
-import SalesInfoStampTax from './pages/SalesInfo/SalesInfoStampTax'; // 추가된 페이지
+import SalesInfoGuide from './pages/SalesInfo/SalesInfoGuide';
+import SalesInfoAnnouncement from './pages/SalesInfo/SalesInfoAnnouncement';
+import SalesInfoStampTax from './pages/SalesInfo/SalesInfoStampTax';
 import SubscriptionGuide from './pages/SalesInfo/SubscriptionGuide';
+
+import Press from './pages/Promotion/Press';
+import PressDetail from './pages/Promotion/PressDetail';
+import Customer from './pages/Promotion/Customer';
 
 function App() {
   return (
     <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Main />} />
+      <Routes>
+        {/* 메인 */}
+        <Route path='/' element={<Main />} />
 
-          <Route path="/Brand/intro" element={<Brand1 />} />
-          <Route path="/Brand/video" element={<Brand2 />} />
+        {/* Brand */}
+        <Route path="/Brand/intro" element={<Brand1 />} />
+        <Route path="/Brand/video" element={<Brand2 />} />
 
-          <Route path="/BusinessGuide/intro" element={<BusinessGuide1 />} />
-          <Route path="/BusinessGuide/plan" element={<BusinessGuide2 />} />
-          <Route path="/BusinessGuide/documents" element={<BusinessGuide3 />} />
+        {/* BusinessGuide */}
+        <Route path="/BusinessGuide/intro" element={<BusinessGuide1 />} />
+        <Route path="/BusinessGuide/plan" element={<BusinessGuide2 />} />
+        <Route path="/BusinessGuide/documents" element={<BusinessGuide3 />} />
 
-          <Route path="/LocationEnvironment/intro" element={<LocationEnvironment1 />} />
-          <Route path="/LocationEnvironment/primium" element={<LocationEnvironment2 />} />
-          
-          <Route path="/ComplexGuide/intro" element={<ComplexGuide1 />} />
-          <Route path="/ComplexGuide/detailintro" element={<ComplexGuide2 />} />
-          <Route path="/ComplexGuide/community" element={<ComplexGuide3 />} />
+        {/* LocationEnvironment */}
+        <Route path="/LocationEnvironment/intro" element={<LocationEnvironment1 />} />
+        <Route path="/LocationEnvironment/primium" element={<LocationEnvironment2 />} />
 
-          <Route path="/FloorPlan/59A" element={<FloorPlan1 />} />
-          <Route path="/FloorPlan/59B" element={<FloorPlan2 />} />
-          <Route path="/FloorPlan/84A" element={<FloorPlan3 />} />
-          <Route path="/FloorPlan/84B" element={<FloorPlan4 />} />
-          <Route path="/FloorPlan/114A" element={<FloorPlan5 />} />
-          <Route path="/FloorPlan/114B" element={<FloorPlan6 />} />
-          <Route path="/FloorPlan/videos" element={<FloorPlanVideos />} />
-          <Route path="/FloorPlan/Emodel" element={<Emodel />} /> 
+        {/* ComplexGuide */}
+        <Route path="/ComplexGuide/intro" element={<ComplexGuide1 />} />
+        <Route path="/ComplexGuide/detailintro" element={<ComplexGuide2 />} />
+        <Route path="/ComplexGuide/community" element={<ComplexGuide3 />} />
 
-          
-          <Route path="/Interior/59A" element={<Interior1 />} />
-          <Route path="/Interior/84A" element={<Interior2 />} />
-          <Route path="/Interior/84B" element={<Interior3 />} />
+        {/* FloorPlan */}
+        <Route path="/FloorPlan/59A" element={<FloorPlan1 />} />
+        <Route path="/FloorPlan/59B" element={<FloorPlan2 />} />
+        <Route path="/FloorPlan/84A" element={<FloorPlan3 />} />
+        <Route path="/FloorPlan/84B" element={<FloorPlan4 />} />
+        <Route path="/FloorPlan/114A" element={<FloorPlan5 />} />
+        <Route path="/FloorPlan/114B" element={<FloorPlan6 />} />
+        <Route path="/FloorPlan/114C" element={<FloorPlan7 />} />
+        <Route path="/FloorPlan/videos" element={<FloorPlanVideos />} />
+        <Route path="/FloorPlan/Emodel" element={<Emodel />} />
 
-          {/* 추가된 분양안내 관련 경로 */}
-          <Route path="/SalesInfo/guide" element={<SalesInfoGuide />} />
-          <Route path="/SalesInfo/SubscriptionGuide" element={<SubscriptionGuide/>} />
-          <Route path="/SalesInfo/announcement" element={<SalesInfoAnnouncement />} />
-          <Route path="/SalesInfo/StampTax" element={<SalesInfoStampTax />} />  
+        {/* Interior */}
+        <Route path="/Interior/59A" element={<Interior1 />} />
+        <Route path="/Interior/84A" element={<Interior2 />} />
+        <Route path="/Interior/84B" element={<Interior3 />} />
 
-          <Route path="/*" element={<h1>Not Found</h1>} />
-        </Routes>
+        {/* SalesInfo */}
+        <Route path="/SalesInfo/guide" element={<SalesInfoGuide />} />
+        <Route path="/SalesInfo/SubscriptionGuide" element={<SubscriptionGuide />} />
+        <Route path="/SalesInfo/announcement" element={<SalesInfoAnnouncement />} />
+        <Route path="/SalesInfo/StampTax" element={<SalesInfoStampTax />} />
+
+        {/* Promotion: 이전 URL → 새 URL 리다이렉트 */}
+        <Route
+          path="/Promotion/Press"
+          element={<Navigate to="/pentacityhansin/press" replace />}
+        />
+
+        {/* site 기반 라우트: press 목록 / 상세 */}
+        <Route path="/:site/press" element={<Press />} />
+        <Route path="/:site/press/:id" element={<PressDetail />} />
+
+        {/* Promotion Customer */}
+        <Route path="/:site/customer" element={<Customer />} />
+
+        {/* Not Found */}
+        <Route path="/*" element={<h1>Not Found</h1>} />
+      </Routes>
     </BrowserRouter>
   );
 }
