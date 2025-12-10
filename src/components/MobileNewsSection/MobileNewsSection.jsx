@@ -27,7 +27,7 @@ const MobileNewsSection = ({ newsList }) => (
             <p className={styles.cardExcerpt}>{item.excerpt}</p>
             <div className={styles.cardDate}>{item.date}</div>
           </div>
-        </Link>
+        </Link> 
       ))}
     </div>
 
