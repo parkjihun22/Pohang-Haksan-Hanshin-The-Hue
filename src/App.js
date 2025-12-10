@@ -91,7 +91,7 @@ function App() {
         {/* Promotion: 이전 URL → 새 URL 리다이렉트 */}
         <Route
           path="/Promotion/Press"
-          element={<Navigate to="/pentacityhansin/press" replace />}
+          element={<Navigate to="/포항 학산 한신더휴/press" replace />}
         />
 
         {/* site 기반 라우트: press 목록 / 상세 */}
